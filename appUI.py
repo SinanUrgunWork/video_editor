@@ -92,18 +92,18 @@ output_entry.place(relx=0.3, rely=0.8, anchor="w")
 
 # Uzantı seçme bölümü
 extension_label = tk.Label(root, text="Uzantı Seçin:", background="#f0f0f0")
-extension_label.place(relx=0.1, rely=0.8, anchor="w")
+extension_label.place(relx=0.1, rely=0.9, anchor="w")
 extension_var = tk.StringVar(root)
 extension_var.set(".mp4")  # Varsayılan uzantı
 extension_option = tk.OptionMenu(root, extension_var, ".mp4", ".avi", ".mov")
-extension_option.place(relx=0.3, rely=0.8, anchor="w")
+extension_option.place(relx=0.3, rely=0.9, anchor="w")
 
 
 progress_label = tk.Label(root, text="", background="#f0f0f0")
 progress_label.place(relx=0.5, rely=0.9, anchor="center")
 # Oluştur düğmesi
 create_button = tk.Button(root, text="Oluştur", command=create_video)
-create_button.place(relx=0.5, rely=0.8, anchor="center")
+create_button.place(relx=0.7, rely=0.9, anchor="center")
 
 # Uygulamayı çalıştır
 root.mainloop()
